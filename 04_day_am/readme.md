@@ -5,7 +5,7 @@
 * Intro to the DOM
 * Selectors in Vanilla JS
 * DOM Manipulations
-* Event Listenners
+* Event Listeners
 
 
 ## The DOM
@@ -37,6 +37,6 @@ DOM - the Document Object Model is how we represent the HTML document or webpage
 `element.style.property =` Change the style of an HTML element
 
 ##Event Listenners
-`addEventListenner(event, functionCall)` This allows you te register an event listenner. 
+`addEventListener(event, functionCall)` This allows you te register an event listenner. 
 
 You can also use `onclick="functionCall()"` in the HTML but this is not considered best practice.
