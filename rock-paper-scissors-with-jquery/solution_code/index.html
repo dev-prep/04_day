@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="messageBox">
+        <h1 id="message">Welcome!</h1>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="exampleInputName2">Enter your name to play</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <h1 id="result"></h1>
+      </div>
+      <div id="gameBoard">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="col-md-4 options rock" id="rock"></div>
+          <div class="col-md-4 options paper" id="paper"></div>
+          <div class="col-md-4 options scissors" id="scissors"></div>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+          <div class="col-md-6 plays userMove" id="user"></div>
+          <div class="col-md-6 plays compMove" id="comp"></div>
+        </div>
+      </div>
+      <div id="scoreDiv">
+        <table class="table" id="scores">
+          <thead>
+            <th id="userName">User</th>
+            <th>Computer</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="userScore">0</td>
+              <td id="computerScore">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./js/app.js"></script>
+  </body>
+</html>
